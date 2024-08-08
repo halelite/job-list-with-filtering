@@ -111,7 +111,7 @@ function jobsReducer(state = initState, action) {
 export const fetchJobs = () => {
     return async (dispatch) => {
         try {
-            const res = await fetch('/assets/data.json');
+            const res = await fetch(`${process.env.PUBLIC_URL}/assets/data.json`);
             const data = await res.json();
             dispatch({
                 type: 'FETCH_JOBS',

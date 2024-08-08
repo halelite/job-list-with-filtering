@@ -49,7 +49,7 @@ function JobItem({id}) {
     return (
         <li className={`${job.featured ? 'featured' : ''} job-item`}>
             <div className="image">
-                <img src={job.logo} alt={job.company} />
+                <img src={`${process.env.PUBLIC_URL}/${job.logo}`} alt={job.company} />
             </div>
             <div className="info">
                 <div className="name">
