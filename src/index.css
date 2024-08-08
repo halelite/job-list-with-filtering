@@ -28,7 +28,7 @@ header {
 
 main {
   height: auto;
-  min-height: calc(100% - 161px);
+  min-height: calc(100% - 166px);
   border-top: 1px solid transparent;
   position: relative;
 }
@@ -210,6 +210,7 @@ main {
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 .attribution a {
